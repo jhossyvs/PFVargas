@@ -1,0 +1,93 @@
+html{
+    font-family: $mainFont;
+}
+
+#logoHuellitas{
+    height: 2em;
+    width: 7em;
+}
+.list-group-item{
+    border-color: none;
+}
+body{
+    background-color: rgba(246, 253, 254, 0.47);
+}
+#contenedorBordeSombra{
+    background-color: white;
+}
+
+#iconosBoton{
+    height: 60px;
+    width: 60px;
+}
+
+#iconosBotonIndex{
+    height: 30px;
+    width: 30px;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+    &:hover{
+        color:black;
+        font-weight: 600;
+    }
+}
+
+#imgHeader{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#imgHeaderIndex{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+#imgAlianzas{
+    width: 30vh;
+}
+
+#contenedorLogros{
+    width: 11rem;;
+}
+
+#contenedorBordeSombra{
+    background-color: white;
+    border-color: rgb(243, 251, 255);
+    box-shadow: -1px 2px 15px rgba(0, 0, 0,0.1) ;
+    
+}
+#seccionLogrosIndex{
+    h3{
+        font-size: 2.5em;
+    }
+}
+
+#botonMenuAdoptar{
+    img{
+        &:hover{
+            transform: rotatez(20deg);
+            cursor: pointer;
+            transition: transform 1seg;
+        }
+    }
+}
+
+#botonGeneral{
+    border-radius: 0.5em;
+    border-color: #00000000;
+    background: linear-gradient(to right top,#fae993,#ffbf7f);
+    &:hover{
+        color:black;
+        font-weight: 600;
+        cursor: pointer;
+    }   
+}

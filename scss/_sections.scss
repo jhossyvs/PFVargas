@@ -1,0 +1,82 @@
+.headerCompuestoImagenes{
+    @include flex(row,space-evenly,center,wrap);
+    margin: 20px 0px;
+    padding: 0px 25px;
+
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 1em;
+        margin: 10px;
+    }
+    .headerTitulo{
+        @include flex(column,center,center,wrap);
+        h1{
+            text-align: center;
+            margin: 10px 20px;
+            padding: 0 10px 0 0;
+            @include flex(column,center,center,wrap);
+        }
+        p{
+            text-align: center;
+            margin: 0px 20px;
+            padding: 0 10px 0 0;
+            @include flex(column,center,center,wrap);
+        }
+}
+}
+#headerLinea{
+    @include flex(row,center,center,wrap);
+    padding: 10px 0px;
+}
+.headerLineasImagenes{
+    @include flex(column,space-between,center,wrap);
+    margin: 5px 0px;
+}
+
+
+.sectionDescripcion{
+    @include flex(column,space-between,center,wrap);
+    padding: 10px 25px;
+    margin: 10px 10px;
+    border-radius: 2em;
+    h2{
+        @include flex(column,space-between,center,wrap);
+    }
+    #sectionDescripcionInterno{
+        text-align: center;
+        @include flex(column,space-between,center,wrap);
+    }
+    img{
+        height: 21%;
+        width: 51%;
+        border-radius: 1em;
+        margin: 20px 20px;
+    }
+    #seccionDescripcion--backgroundcolor{
+        background-color:  map-get($map: $paleta, $key: 'backgroundColorTres');
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#headerIndex{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/utilidades/imagenHeaderIndex.jpg);
+    background-position: top;
+    background-size: cover;
+
+    height: 100vh;
+    padding: 10px;
+}
+
+#headerAdoptar{
+    @extend #headerIndex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/utilidades/imagenDescripcionIndex.jpg);
+
+    height: 50vh;
+    
+}
+
+footer{
+    background:  map-get($map: $paleta, $key: 'backgroundGradiente');
+}

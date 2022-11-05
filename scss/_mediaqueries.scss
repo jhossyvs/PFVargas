@@ -1,0 +1,57 @@
+
+ /*Inicia Breakpoints*/
+
+ /*Para el modo MOBILE*/
+@include media(mobile){
+    #headerIndex, #headerAdoptar{
+        h1{
+            font-size: 2em;
+            color: white;
+        }
+        p{
+            font-size: 1em;
+            color: white;
+        }
+    }
+}
+    /*Para el modo tablet*/
+@include media(tablet){
+    .seccionTablero #seccionTableroInterno{
+        @include flex(row,center,center,wrap);
+    }
+    .seccionesNosotros{
+        .seccionFiguras{
+            @include flex(column,space-evenly,stretch,nowrap);
+            #seccionFigurasInterno{
+                @include flex(row,space-evenly,center,nowrap);
+            }
+        }
+    }
+    #headerIndex, #headerAdoptar{
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    }
+}
+
+/*Para el modo pantalla en escritorio*/
+@include media (desktop){
+    .sectionDescripcion{
+        @include flex(row,space-between,center,nowrap);
+    }
+    .seccionesIndex{
+        .sectionDescripcion{
+            @include flex(column,space-between,center,nowrap);
+        }
+    }
+    
+    .seccionContacto{
+        div{
+            @include flex(row,center,center,nowrap);
+        }
+    }
+}
+

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Adopta un perro, gato, conejo o cuy. Encuentra en Refugio Huellitas tu nuevo mejor amigo para toda la vida.">
+    <meta name="keywords" content="refugio, animales, adopta, mascota, albergue campestre">
+    <meta name="author" content="Refugio Huellitas">
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" href="../img/iconos/huellitasIcono.png" type="image/x-icon" />
+
+    <!--Bootstrap CSS-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!--MI CSS-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Adopta un animalito en Huellitas</title>
+  </head>
+
+  <body>
+    <!--Inicia NAV-->
+    <nav class="navbar navbar-expand-md navbar-light px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            id="logoHuellitas"
+            src="../img/iconos/logoHuellitas.png"
+            alt="Logo de Refugio Huellitas"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="adoptar.html"
+                >Adopta</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="donar.html"
+                >Dona</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Termina NAV-->
+
+    <!--Inicia Header-->
+    <header id="headerAdoptar">
+      <div
+        class="d-flex flex-column justify-content-center h-100 p-5 text-start mx-auto"
+      >
+        <h1>¡En búsqueda de nuevo hogar!</h1>
+        <p>Más de 750 animales esperando un amigo con quien crecer.</p>
+        <p>Sé parte del cambio y adopta un compañero de vida.</p>
+      </div>
+    </header>
+
+    <main class="container-fluid py-3">
+      <div class="row row-cols-2-lg justify-content-center">
+        <section class="col-sm-12 col-lg-2 text-center text-lg-end">
+          <h3>Elige a tu animal favorito</h3>
+          <button class="btn" id="botonMenuAdoptar">
+            <img
+              id="iconosBoton"
+              src="../img/iconos/perro.png"
+              alt="Icono de Perro"
+            />
+            <p>Perros</p>
+          </button>
+          <button class="btn" id="botonMenuAdoptar">
+            <img
+              id="iconosBoton"
+              src="../img/iconos/gato.png"
+              alt="Icono de Gato"
+            />
+            <p>Gatos</p>
+          </button>
+          <button class="btn" id="botonMenuAdoptar">
+            <img
+              id="iconosBoton"
+              src="../img/iconos/cuy.png"
+              alt="Icono de Cuy"
+            />
+            <p>Cuyes</p>
+          </button>
+          <button class="btn" id="botonMenuAdoptar">
+            <img
+              id="iconosBoton"
+              src="../img/iconos/conejo.png"
+              alt="Icono de Conejo"
+            />
+            <p>Conejos</p>
+          </button>
+          <div
+            class="d-flex flex-column flex-md-row flex-lg-column justify-content-md-evenly"
+          >
+            <h3>Raza</h3>
+            <ul class="d-flex flex-column text-center text-lg-end">
+              <li>
+                <label for="opt-in">Mixta</label>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <label for="opt-in">Pitbull</label>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <label for="opt-in">Siamés</label>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <label for="opt-in">Balinés</label>
+                <input type="checkbox" />
+              </li>
+            </ul>
+            <h3>Sexo</h3>
+            <ul class="text-center text-lg-end">
+              <li>
+                <label for="opt-in">Hembra</label>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <label for="opt-in">Macho</label>
+                <input type="checkbox" />
+              </li>
+            </ul>
+          </div>
+          <h3>Edad</h3>
+          <label for="customRange2" class="form-label">De 0 a 10 años</label>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="10"
+            id="customRange2"
+          />
+        </section>
+        <section class="col col-lg-9 d-flex flex-wrap justify-content-evenly">
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen1.jpg"
+              alt="Juan tu próximo gato mejor amigo, gato de raza mixta, de pelaje negro y blanco"
+            />
+            <div class="p-3">
+              <h2>Juan</h2>
+              <h3>5 años, Macho, Raza mixta</h3>
+              <p>
+                Un amigo increíble con quien jugar, correr y divertirse. Le
+                gusta saltar y ladra mucho cuando ve a sus seres queridos. Le
+                gusta la lasaña y las croquetas de pescadito. Amaría ser tu
+                nuevo amigo.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen2.jpg"
+              alt="Ana, gata siamés, de pelaje gris"
+            />
+            <div class="p-3">
+              <h2>Ana</h2>
+              <h3>2 años, Hembra, Raza Siamés</h3>
+              <p>
+                De las mejores amigas que un amante de los gatos puede tener. Le
+                gusta dormir acomodada entre las sábanas, pero no durante el
+                verano. Come de todo, aunque ella dice que se ha puesto a dieta.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen3.jpg"
+              alt="Pedro, perro de raza pitbul sonriendo"
+            />
+            <div class="p-3">
+              <h2>Pedro</h2>
+              <h3>10 años, Macho, Raza Pitbull</h3>
+              <p>
+                Le encanta dormir y tiene el sueño MUY pesado. No lo despiertes
+                en sus siestas por la tarde. Ama correr por la pradera mientras
+                corretea a sus amigos los pájaros. Las croquetas de pollo son
+                sus favs.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen4.jpg"
+              alt="Bertha, perra de raza mixta sonriendo"
+            />
+            <div class="p-3">
+              <h2>Bertha</h2>
+              <h3>1 año, Hembra, Raza Mixta</h3>
+              <p>
+                ¿Sabes qué pasa cuando un objeto inamovible se encuentra con una
+                fuerza imparable? Bertha y sus ganas de jugar. No hay nada ni
+                nadie que la pare. Ama saltar y conocer nuevas personas, es muy
+                extrovertida.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen5.jpg"
+              alt="Lucas, labrador de pelaje crema que corre y sonrie"
+            />
+            <div class="p-3">
+              <h2>Lucas</h2>
+              <h3>1 año, Macho, Raza Labrador</h3>
+              <p>
+                Un amigo fiel. Super cariñoso y muy comprensivo, tímido al
+                comienzo, pero leal al conocerte. No conoce la maldad y ofrece
+                la patita si se la pides. Puede hacer todo tipo de truco, lo
+                aprendió cuando estuvo en el circo.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card border-0 col-md-4 col-lg-3 m-3"
+            id="contenedorBordeSombra"
+          >
+            <img
+              class="w-100"
+              src="../img/animalesadoptar/imagen8.jpg"
+              alt="Pepe, perro de raza mixta que ladra al fotografo"
+            />
+            <div class="p-3">
+              <h2>Pepe</h2>
+              <h3>2 años, Macho, Raza Mixta</h3>
+              <p>
+                O también conocido como "El cantante". Le gusta cantar y bailar
+                cuando escucha música. Se relaja cuando toma el sol y duerme
+                profundamente por las noches, pero durante el día su actividad
+                favorita es ladrar.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!--Inicia MAIN-->
+
+    <!--Termina MAIN -->
+
+    <!--Inicia Footer-->
+    <footer class="row d-flex flex-wrap px-5 py-4 m-0 justify-content-evenly">
+      <div class="col-sm-12 col-md-6 text-start d-flex flex-column">
+        <div>
+          <a href="../index.html">
+            <img
+              class="w-15"
+              src="../img/iconos/huellitasIcono.png"
+              alt="Icono de Huellitas"
+            />
+          </a>
+        </div>
+        <a href="nosotros.html">Conoce más de nosotros</a>
+        <a href="adoptar.html">Adopta un nuevo y mejor amigo</a>
+      </div>
+
+      <div class="col-sm-12 col-md-6 text-start d-flex flex-column">
+        <a href="donar.html">Conoce las formas de donar</a>
+        <a href="contacto.html">Ponte en contacto con nosotros</a>
+        <div>
+          <h6>Síguenos en nuestras redes sociales</h6>
+          <div class="justify-content-evenly">
+            <a href="https://facebook.com" target="_blank">
+              <img
+                id="iconosBotonIndex"
+                src="../img/iconos/facebook.png"
+                alt="Síguenos en facebook"
+              />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img
+                id="iconosBotonIndex"
+                src="../img/iconos/twitter.webp"
+                alt="Síguenos en twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Termina Footer-->
+
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
